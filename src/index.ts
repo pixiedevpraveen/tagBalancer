@@ -16,7 +16,7 @@
     
  * ```
  */
-export function tagBalancer(html: string) {
+export function tagBalancer(html: string): string {
     if (!html) return "";
 
     /** 
