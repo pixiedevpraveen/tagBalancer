@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Unbalanced: extra ending div",
+        "html_str": "<div>\n<br></div>\n    <img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\"\n        width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\">\n    <br>\n    </div>",
+        "expected": "<div>\n<br></div>\n    <img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\"\n        width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\">\n    <br>"
+    },
+    {
+        "name": "Balanced:",
+        "html_str": "<div><br></div><div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\"><br></div>",
+        "expected": "<div><br></div><div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\"><br></div>"
+    },
+    {
+        "name": "Unbalanced: extra starting div",
+        "html_str": "<div>\n<br></div>\n<div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\"\n        width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\">\n    <br>",
+        "expected": "<div>\n<br></div>\n<img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\"\n        width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\">\n    <br>"
+    },
+    {
+        "name": "Unbalanced: without newline and whitespaces",
+        "html_str": "<div><br></div><div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\"><br>",
+        "expected": "<div><br></div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\"><br>"
+    },
+    {
+        "name": "Unbalanced: with self closing tag",
+        "html_str": "<div><br></div><div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\" /><br>",
+        "expected": "<div><br></div><img src=\"/idb/files?id=vEQibqclfEKwjhM&fk=Frq9gA68GK21saU\" data-id=\"vEQibqclfEKwjhM\" data-type=\"drawing\" width=\"300\" data-fk=\"Frq9gA68GK21saU\" style=\"background-color: rgb(255, 255, 255);\" /><br>"
+    }
+]

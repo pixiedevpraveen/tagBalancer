@@ -1,0 +1,22 @@
+{
+  "name": "tag-balancer",
+  "description": "Balance tags of html string",
+  "version": "1.0.0",
+  "type": "module",
+  "module": "build/index.js",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun run build.ts && bunx tsc --emitDeclarationOnly --declarationMap --declaration  --outDir ./build src/index.ts"
+  },
+  "author": "Praveen Yadav",
+  "license": "MIT",
+  "keywords": [
+    "tag-balancer",
+    "html tags",
+    "html string",
+    "sanitizer helper",
+    "sanitizer util",
+    "typescript"
+  ]
+}

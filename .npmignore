@@ -1,0 +1,8 @@
+.github/
+src/
+test/
+bun.lockb
+.npmignore
+build.ts
+tsconfig.json
+demo.ts
