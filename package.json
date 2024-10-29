@@ -1,7 +1,7 @@
 {
   "name": "tag-balancer",
   "description": "Balance tags of html string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "module": "build/index.js",
   "main": "build/index.js",
